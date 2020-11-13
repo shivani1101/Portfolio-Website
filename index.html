@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- 
+SUMMARY
+-uses divs as different pages, each div is overlapping each other using z-index property in css for each div (see css)
+- uses js to hide and show each div based on which button is clicked (onlick and calls function to show tht div and hide other divs)
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid"> 
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">   <!-- Right side of menu bar-->   <!--use <ul class="nav navbar-nav"> for left side of the menu bar-->
+              <li><a href="#" onclick="homeFunction()"><span class="glyphicon glyphicon-home"></span>  Home</a></li>  <!--Glyphon.. uses bootstraps icons-->
+              <li><a href="#" onclick="aboutFunction()"><span class="glyphicon glyphicon-user"></span>  About</a></li> <!--Onclick is given function which is in js-->
+              <li><a href="#" onclick="contactFunction()"><span class="glyphicon glyphicon-envelope"></span>  Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav">   <!-- Right side of menu bar-->   <!--use <ul class="nav navbar-nav"> for left side of the menu bar-->
+                <li><a href="#" >SP</a></li> <!--Left side of nav bar says 'Shivani Patel'-->
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="part1">
+          <div class="top"><br><br><br><br><br><br> 
+              <div class="info">
+                  <img class="profile"src="profile.jpg" >
+                  <h1 class="topname">Shivani Patel</h1>
+                  <p class="softeng">Software Developer</p>
+              </div><br><br><br><br><br>  
+          </div>
+            
+          <div class="intro"> <br><br><br>
+              <p>Hi I'm Shivani, an enthusiastic computer science student at Ryerson! 
+                    Other than coding, I love to travel and go on adventures!  
+                    I want to represent and help those who are marginalized in the technology 
+                    industry. I am always trying to find 
+                    opportunities to help encourage and empower women in computer 
+                    science. </p><br>
+          <div class="uni">
+              <h3>Ryerson University</h3>
+              <p>Computer Science (B.Sc)        Expected graduation: June 2022 </p>
+              <p>Minor in Mathematics</p>  
+              <p>Concentration in Software Engineering</p>     <br><br><br>
+          </div>
+                    <a href="https://www.facebook.com/profile.php?id=100007358405726" ><button class="icon1"><i class="fa fa-facebook-square fa-2x"></i></button></a>
+                    <a href="https://github.com/shivani1101" ><button class="icon2"><i class="fa fa-github-square fa-2x"></i></button></a>
+                    <a href="https://www.linkedin.com/in/shivani-patel-868314194" ><button class="icon3"><i class="fa fa-linkedin-square fa-2x"></i></button></a>
+                    <a href="mailto: shivanipatel1101@gmail.com" ><button class="icon4"><i class="fa fa-envelope-square fa-2x"></i></button></a>
+              <br><br><br></div><br><br><br>
+              <p class="copyright">@Shivani Patel (2020)</p>    
+      </div>
+      <div id="part2">
+            <br><br><br>
+            <h1 class="heading">Projects</h1><br><br>
+            <div class="container">    
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="panel panel-default">
+                      <div class="panel-heading"> Crazy Eights</div>
+                      <div class="panel-body"><p class="projectText">Recreated the cards game Crazy Eights using Java. Object Oriented Programming was heavily used to create this game. A Graphic User Interface (GUI) was used to create a visual platform to allow user interaction </p></div>
+                      <div class="panel-footer"><a href="https://github.com/kalindukehel/Crazy-Eights" ><button class="registry"><i class="fa fa-github-square fa-2x"></i></button></a></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4"> 
+                    <div class="panel panel-default">
+                      <div class="panel-heading">Registry Simulator</div>
+                      <div class="panel-body"><p class="projectText">Developed a well-organized complex university registry system that manages student enrollment, scheduling classes and provides a graphical image of student time tables.
+              Used Inheritance, Polymorphism, Object Oriented Programming
+              </p></div>
+                      <div class="panel-footer"><a href="https://github.com/shivani1101/StudentRegistrySimulator" ><button class="registry"><i class="fa fa-github-square fa-2x"></i></button></a></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4"> 
+                    <div class="panel panel-default">
+                      <div class="panel-heading">Website</div>
+                      <div class="panel-body"><p class="projectText">Used Bootstrap and CSS framework for a responsive styled design. JavaScript used to make the webpage responsive  </p></div>
+                      <div class="panel-footer"><a href="https://github.com/shivani1101/StudentRegistrySimulator" ><button class="registry"><i class="fa fa-github-square fa-2x"></i></button></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <h1 class="heading">Technical Experience</h1><br><br>
+              <div class="technical">
+                <p class="languages">
+                  <b> Languages</b> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java, Python, HTML, CSS, JavaScript, Matlab, R, Perl, PHP, Ruby, MySQL <br>
+                  <b> Environments</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Git, Linux, Bash/Shell, Eclipse, Visual Studio, Vim <br>
+                  <b> Applications</b>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MS Office (Word, Excel, PowerPoint), Photoshop, Illustrator, Multimedia Logic (Microprocessor Stimulations) <br>
+                </p>
+                  <br><br>
+              </div>
+              <h1 class="heading">Extra-Curricular</h1><br><br>
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img class="wics" src="wics.jpg">
+                  </div>
+
+                  <div class="col-sm-8"> <br><br>
+                  <h4>Vice President - RYERSON WICS</h4>
+                    <p>I am the Vice President of Ryersons’s WICS (Women in Computer Science) Organization. As VP Finance 
+                    I monitor all financial transactions by preparing monthly financial and transaction reports. My duty 
+                    includes negotiating with the Computer Science Department, Ryerson Student Society and Ryerson Student 
+                    Union for funding. I also develop sponsorship packages and reach out to well-known tech companies for collaborations.
+                  </p>
+                  </div>
+                </div>
+              </div>
+              <br><br>
+              <p class="copyright">@Shivani Patel (2020)</p>
+      </div>
+      <div id="part3">
+
+        <h1 class="heading">Contact Me.</h1> <br>
+        <div class="uni">
+        <a href="https://www.facebook.com/profile.php?id=100007358405726" ><button class="icon1"><i class="fa fa-facebook-square fa-2x"></i></button></a>
+        <a href="https://github.com/shivani1101" ><button class="icon2"><i class="fa fa-github-square fa-2x"></i></button></a>
+        <a href="https://www.linkedin.com/in/shivani-patel-868314194" ><button class="icon3"><i class="fa fa-linkedin-square fa-2x"></i></button></a>
+        <a href="mailto: shivanipatel1101@gmail.com" ><button class="icon4"><i class="fa fa-envelope-square fa-2x"></i></button></a>
+      </div>
+      <br><br>
+        <div class="container">
+          <form action="https://formspree.io/f/xknpzjpw" method="POST">
+            <div class="row">
+              <div class="col-25">
+                <label class="contactTitle"for="name"><h4>Name</h4></label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="name" name="name" placeholder="Your name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label class="contactTitle" for="lname"><h4>Email</h4></label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" name="email" placeholder="Your email..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label class="contactTitle" for="message"><h4>Message</h4></label>
+              </div>
+              <div class="col-75">
+                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+          </div>
+          <br><br><br> <br><br>             
+          <p class="copyright">@Shivani Patel (2020)</p>         
+      </div>
+<script src="index.js"></script>
+</body>
+</html>

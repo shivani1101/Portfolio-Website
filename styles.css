@@ -1,0 +1,221 @@
+
+#part1 {  
+    left: 0px;
+    top: 52px;
+    z-index: -1; /* the different div's are overlapped in each other, so we just show and hide (display 'block' and 'none') em with js  */
+    display: block;
+}
+#part2{
+    left: 0px;
+    top: 100px;
+    z-index: -2;
+    display: none; /* We display part 1 on 'block' and else is nun when website first loaded */
+}
+#part3 {
+    left: 0px;
+    top: 100px;
+    z-index: -3;
+    display: none;
+  }
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: black;
+}
+.top{
+    background-image: url("code.jpeg");
+    
+    height: 50%;
+    width: 100%;
+}
+.topname{
+    color: white;
+    font-size: 70px;
+}
+.info{
+      text-align: center;
+}
+.softeng{
+    color: white;
+}
+body{
+    background-color: black;
+}
+.intro{
+    text-align: center;
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.icon1
+{
+    color: #FFFFFF;
+    background-repeat:no-repeat;
+    border: none;
+    background-color: Transparent;
+    cursor:pointer;
+    overflow: hidden;
+  
+}
+.icon1:hover {
+    color: rgb(64, 179, 79);
+}
+.icon2:hover {
+    color: rgb(64, 179, 79);
+}
+.icon3:hover {
+    color: rgb(64, 179, 79);
+}
+.icon4:hover {
+    color: rgb(64, 179, 79);
+}
+.icon2{
+    color: #FFFFFF;
+    background-repeat:no-repeat;
+    border: none;
+    background-color: Transparent;
+    cursor:pointer;
+    overflow: hidden;
+}
+.icon3{
+    color: #FFFFFF;
+    background-repeat:no-repeat;
+    border: none;
+    background-color: Transparent;
+    cursor:pointer;
+    overflow: hidden; 
+}
+.icon4{
+    color: #FFFFFF;
+    background-repeat:no-repeat;
+    border: none;
+    background-color: Transparent;
+    cursor:pointer;
+    overflow: hidden; 
+}
+.heading{
+    color: white;
+    margin-left: 10px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+h3{
+    color: white;
+}
+.col-sm-8{
+    text-align: center;
+}
+.projectText{
+    color: rgb(0, 0, 0);
+}
+.panel-body{
+    height: 170px;
+}
+.registry{
+    color: rgb(114, 109, 109);
+    background-repeat:no-repeat;
+    border: none;
+    background-color: Transparent;
+    cursor:pointer;
+    overflow: hidden; 
+}
+.registry:hover {
+    color: rgb(64, 179, 79);
+}
+.panel-footer{
+    text-align: center;
+}
+.panel-heading{
+    text-align: center; 
+}
+.uni{
+    text-align: center;
+}
+.contactHeading{
+    color: white;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+label {
+    padding: 12px 12px 12px 19px;
+    display: inline-block;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Responsive- when the screen is less than 600px wide, make the two columns stack on top of each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+.copyright{
+    text-align: center;
+    color: white;
+}
+.languages{
+    color: black;
+}
+.technical {
+    align-content: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.wics{
+    width: 100%;
+    height: auto;
+}
+h4{
+    color: white;
+}
+.profile{
+    width: auto;
+    height: 140px;
+}
+.contactTitle{
+    color: white;  
+}
+
