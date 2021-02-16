@@ -1,57 +1,35 @@
-
-#part1 {  
-    left: 0px;
-    top: 52px;
-    z-index: -1; /* the different div's are overlapped in each other, so we just show and hide (display 'block' and 'none') em with js  */
-    display: block;
+.logo{
+    height: 100px;
+    width: auto;
 }
-#part2{
-    left: 0px;
-    top: 100px;
-    z-index: -2;
-    display: none; /* We display part 1 on 'block' and else is nun when website first loaded */
-}
-#part3 {
-    left: 0px;
-    top: 100px;
-    z-index: -3;
-    display: none;
-  }
-.navbar {
-    margin-bottom: 0;
-    border-radius: 0;
-    background-color: black;
-}
-.top{
-    background-image: url("Images/code.jpeg");
+.allicons{
+    color: white;
+    background-repeat:no-repeat;
     
-    height: 50%;
-    width: 100%;
-}
-.topname{
-    color: white;
-    font-size: 70px;
-}
-.info{
-      text-align: center;
-}
-.softeng{
-    color: white;
-}
-body{
-    background-color: black;
-}
-.intro{
+    background-color: Transparent;
+    cursor:pointer;
+    overflow: hidden;
+    border-style: solid; border-color: white;
+    border-width: thin;
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
-    color: white;
-    margin-left: 100px;
-    margin-right: 100px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    display: inline-block;
+    
+}
+
+.fullicon :hover{
+    background-color: rgb(35, 51, 65);
+    
 }
 .icon1
 {
-    color: #FFFFFF;
+    color: white;
     background-repeat:no-repeat;
     border: none;
     background-color: Transparent;
@@ -60,19 +38,19 @@ body{
   
 }
 .icon1:hover {
-    color: rgb(64, 179, 79);
+    color: rgb(238, 202, 42);
 }
 .icon2:hover {
-    color: rgb(64, 179, 79);
+    color:rgb(238, 202, 42);
 }
 .icon3:hover {
-    color: rgb(64, 179, 79);
+    color: rgb(238, 202, 42);
 }
 .icon4:hover {
-    color: rgb(64, 179, 79);
+    color: rgb(238, 202, 42);
 }
 .icon2{
-    color: #FFFFFF;
+    color: white;
     background-repeat:no-repeat;
     border: none;
     background-color: Transparent;
@@ -80,142 +58,220 @@ body{
     overflow: hidden;
 }
 .icon3{
-    color: #FFFFFF;
+    color: white;
     background-repeat:no-repeat;
     border: none;
     background-color: Transparent;
     cursor:pointer;
     overflow: hidden; 
+    
+   
 }
 .icon4{
-    color: #FFFFFF;
+    color: white;
     background-repeat:no-repeat;
     border: none;
     background-color: Transparent;
     cursor:pointer;
     overflow: hidden; 
 }
-.heading{
-    color: white;
-    margin-left: 10px;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-p{
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-}
-h3{
-    color: white;
-}
-.col-sm-8{
-    text-align: center;
-}
-.projectText{
-    color: rgb(0, 0, 0);
-}
-.panel-body{
-    height: 170px;
-}
-.registry{
-    color: rgb(114, 109, 109);
-    background-repeat:no-repeat;
-    border: none;
-    background-color: Transparent;
-    cursor:pointer;
-    overflow: hidden; 
-}
-.registry:hover {
-    color: rgb(64, 179, 79);
-}
-.panel-footer{
-    text-align: center;
-}
-.panel-heading{
-    text-align: center; 
-}
-.uni{
-    text-align: center;
-}
-.contactHeading{
-    color: white;
-    text-align: center;
-}
-* {
-    box-sizing: border-box;
-}
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-label {
-    padding: 12px 12px 12px 19px;
-    display: inline-block;
-}
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-}
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-.col-25 {
+.parallax {
+    /* The image used */
+    background-image: url("background.jpg");
+  
+    /* Set a specific height */
+    min-height: 400px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax_greyslider{
+    display:block;
+    position:absolute;  /* absolute helps make the background translucent grey */
+  
+    background:rgba(0, 0, 0, 0.5);
+    
+    height: 250px;
+    width: 90%;
+
+    animation-name: greyslider;
+    animation-duration: 2s;  
+    animation-fill-mode: forwards;
+
+  }
+  .greyslider_text1{
+     font-size: 50px;
+     color: white;
+     
+     animation-name: greytext;
+    animation-duration: 1s;  
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    position: relative;
+  }
+  @keyframes greytext {    /*  goes with animation of slider with .parallax text class */
+    from {left:-100px; top:-400px;}
+    to {left:50px; top:-400px;}
+  }
+  @keyframes greyslider {    /*  goes with animation of slider with .parallax text class */
+    from {left:-1000px; top:400px;}
+    to {left:0px; top:400px;}
+  }
+  .greyslider_text2{
+    font-size: 30px;
+    color: yellow;
+    position: absolute;
+    
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    
+    white-space: nowrap; /* Keeps the content on a single line */
+     /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    
+    margin-left: 100px;
+    margin-top: -410px;
+    animation: typing 4s ;
+    
+     
+ }
+ @keyframes typing {
+    0% {left:-1000px; visibility: hidden;}
+    50% {width: 0; }
+    100% {width: 100%;  }
+   
+    
+  }
+  
+ .profile{
+    margin-left: 10%;
+ }
+  
+/* Create two equal columns next to each other */
+.column {
     float: left;
-    width: 25%;
-    margin-top: 6px;
-}
-.col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-}
-/* Clear floats after the columns */
-.row:after {
+    width: 50%;
+    padding: 10px;
+    height: 400px; /* sets the hieght for col*/
+  }
+  
+  /* Clears floats after the columns */
+  .row:after {
     content: "";
     display: table;
     clear: both;
-}
-/* Responsive- when the screen is less than 600px wide, make the two columns stack on top of each other */
-@media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
+  }
+ 
+  @media screen and (max-width: 1000px) { /* Responsive: for smaller screen size, the 2nd col moves below the first one and width is 100%*/
+    .column {
       width: 100%;
-      margin-top: 0;
     }
-}
-.copyright{
-    text-align: center;
-    color: white;
-}
-.languages{
-    color: black;
-}
-.technical {
-    align-content: center;
-    background-color: #f2f2f2;
-    padding: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-.wics{
-    width: 100%;
-    height: auto;
-}
-h4{
-    color: white;
-}
-.profile{
-    width: auto;
-    height: 140px;
-}
-.contactTitle{
-    color: white;  
+    .profile{
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block; 
+    }
+    
+   .toggleheximg{
+     visibility: hidden;
+   }   
 }
 
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+  #heximg{ display: block;}  /* show it on smaller screen */
+
+}
+@media screen and (min-width: 1000px) and (max-width: 2000px) {
+  #heximg{ display: none; }   /* hide it on larger screens */
+}
+
+  .hexagon-gallery {
+    margin: auto;
+    margin-top: 50px;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: 200px;
+    grid-gap: 14px;
+    padding-bottom: 50px;
+  }
+  
+  .hex {
+    display: flex;
+    
+    width: 235px;
+    height: 260px;
+    background-color: rgb(175, 175, 175);
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+  .hexagon-gallery :hover{
+      background-color: rgb(238, 202, 42);
+  }
+  
+  .hex:first-child {
+    grid-row-start: 1;
+    grid-column: 2 / span 2;
+  }
+  
+  .hex:nth-child(2) {
+    grid-row-start: 1;
+    grid-column: 4 / span 2;
+  }
+  
+  .hex:nth-child(3) {
+    grid-row-start: 1;
+    grid-column: 6 / span 2;
+  }
+  
+  .hex:nth-child(4) {
+    grid-row-start: 2;
+    grid-column: 1 / span 2;
+  }
+  
+  .hex:nth-child(5) {
+    grid-row-start: 2;
+    grid-column: 3 / span 2;
+  }
+  
+  .hex:nth-child(6) {
+    grid-row-start: 2;
+    grid-column: 5 / span 2;
+  }
+  
+  .hex:nth-child(7) {
+    grid-row-start: 2;
+    grid-column: 7 / span 2;
+  }
+  
+  .hex:nth-child(8) {
+    grid-row-start: 3;
+    grid-column: 2 / span 2;
+  }
+  
+  .hex:nth-child(9) {
+    grid-row-start: 3;
+    grid-column: 4 / span 2;
+  }
+  
+  .hex:nth-child(10) {
+    grid-row-start: 3;
+    grid-column: 6 / span 2;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
